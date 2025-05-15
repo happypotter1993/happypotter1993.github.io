@@ -1,0 +1,42 @@
+/* base typography */
+body {
+  font-family: sans-serif;
+  margin: 2rem auto;
+  max-width: 720px;
+  line-height: 1.6;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* light theme */
+:root {
+  --bg: #fff;
+  --fg: #111;
+  --link: #0366d6;
+}
+body.light-mode {
+  background: var(--bg);
+  color: var(--fg);
+}
+body.light-mode a { color: var(--link); }
+
+/* dark theme */
+body.dark-mode {
+  --bg: #111;
+  --fg: #eee;
+  --link: #58a6ff;
+  background: var(--bg);
+  color: var(--fg);
+}
+body.dark-mode a { color: var(--link); }
+
+/* toggle button */
+#theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1rem;
+  color: inherit;
+}

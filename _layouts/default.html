@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    {% include head.html %}
+  </head>
+  <body>
+    <button id="theme-toggle">🌓</button>
+    <header>
+      <nav>
+        <a href="{{ '/' | relative_url }}">Home</a>
+        <a href="{{ '/about.html' | relative_url }}">About</a>
+        <a href="{{ '/services.html' | relative_url }}">How I can help</a>
+        <a href="{{ '/projects.html' | relative_url }}">Projects</a>
+        <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+      </nav>
+    </header>
+    <main>
+      {{ content }}
+    </main>
+  </body>
+</html>
